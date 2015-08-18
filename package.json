@@ -1,0 +1,23 @@
+{
+  "name": "dive-into-dogs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ga-dc/dive-into-dogs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ga-dc/dive-into-dogs/issues"
+  },
+  "homepage": "https://github.com/ga-dc/dive-into-dogs#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "hbs": "^3.1.0"
+  }
+}

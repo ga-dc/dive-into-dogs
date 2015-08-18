@@ -11,6 +11,7 @@ function addClicker(link) {
   link.addEventListener("click", function(e) {
     fetch( e.target.href )
     e.preventDefault()
+    history.pushState(null, null, e.target.href);
   }, true);
 }
 
@@ -35,12 +36,5 @@ function fetch(pathname){
     prevUrl.href = response.prev
     dogName.innerHTML = response.current.name
     imageUrl.src = "/img/" + response.current.src
-    history.pushState(null, null, response.current.id);
   })
 }
-
-window.setTimeout(function() {
-  window.addEventListener("popstate", function(e) {
-    swapPhoto(location.pathname);
-  }, false);
-}, 1);

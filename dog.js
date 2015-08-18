@@ -1,6 +1,5 @@
 var fs = require("fs")
 var dogs = fs.readdirSync("./public/img")
-console.log(dogs)
 
 module.exports = {
   current: function(id){

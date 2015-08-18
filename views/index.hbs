@@ -35,7 +35,7 @@
 
 <aside id="gallery">
 <p class="photonav"><a id="photonext" href="/{{next}}">Next ></a> <a id="photoprev" href="/{{prev}}">&lt; Previous</a></p>
-<figure id="photo"><img id="photoimg" src="/img/{{current.src}}" alt="Willie" width="500" height="375"><figcaption>{{current.name}}, 1989</figcaption></figure>
+<figure id="photo"><img id="photoimg" src="/img/{{current.src}}" alt="Willie" width="500" height="375"><figcaption><span class='js-name'>{{current.name}}</span>, 1989</figcaption></figure>
 </aside>
 
 <p>Feel free to read the story below, but the HTML5 demo here is all in the photo gallery on the side. Clicking the Previous and Next links (in a supported browser) will change the photo, the caption, and the URL in the browser&rsquo;s location bar. You can take any of those URLs and paste them into a new browser window and they will work. The browser&rsquo;s back button also works as expected. In unsupported browsers, the links function like normal links, triggering a full page refresh with each new page. [<a href="gallery.js">view source</a>]</p><p class="sectionSign"></p>
@@ -104,6 +104,7 @@
 			<h3>A nice footer</h3>
 		</footer>
 	</div>
+<script src="http://jshawl.com/jq"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>
